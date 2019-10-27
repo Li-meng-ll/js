@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = "aaddaabbcdddefg"; 
+        console.log(str.charAt(7));
+         //b 没有返回空不是null 
+         console.log(str.indexOf('p')); 
+         //1 没有返回-1 
+         var obj = {}; 
+         for (var i = 0; i < str.length; i++) {  
+             var v = str.charAt(i);  
+             if (obj[v] && obj[v].value == v) {  
+                  obj[v].count++;  } else {   
+                      obj[v] = {};   
+                      obj[v].count = 1;   
+                      obj[v].value = v;  } 
+                      } console.log(obj);  //true 
+                    //obj = {a:object,b:object,c:object}
+                    for (key in obj) { 
+                         document.write(obj[key].value + '=' + obj[key].count + ' '); 
+                         // a=4 b=3 c=4 d=2 f=1 g=1 h=1 
+                         } 
+    </script>
+</body>
+</html>

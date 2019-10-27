@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>水仙花数</p>
+    
+    <script type="text/javascript"> 
+        var str = ".";
+        for(var i = 100 ; i < 1000 ; i++){ 
+           //得到这个i的每一个位 
+           var a = parseInt(i / 100); 
+           var b = parseInt(i % 100 / 10); 
+           var c = i % 10; 
+           //验证是否符合水仙花数的特点 pow返回x的y次幂
+           if(Math.pow(a,3) +  Math.pow(b,3) + Math.pow(c,3) == i){
+            document.write(i);
+            document.write(str);
+            console.log(i);
+           } 
+        } 
+     </script> 
+     
+</body>
+</html>

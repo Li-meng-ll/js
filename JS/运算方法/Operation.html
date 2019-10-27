@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <!-- <script type="text/jaavascript" src="Operation.js"></script> -->
+    <p>
+    <input type="text" id="1"> +
+     <input type="text" id="2">
+     <button onclick="add()">=</button>
+     <input type="text" id="3">
+    </p>
+
+    <script>
+        function add(){
+            var a = document.getElementById("1").value;
+            var b = document.getElementById("2").value;
+            var c =Number(a) +Number(b);
+            document.getElementById("3").innerText = c;
+    } 
+    </script>
+
+
+        <p>
+        <input type="text" id="11"> -
+         <input type="text" id="22">
+         <button onclick="jianfa()">=</button>
+         <input type="text" id="33">
+        </p>
+    <script>
+        function jianfa(){
+            var a = document.getElementById("11").value;
+            var b = document.getElementById("22").value;
+            var c =Number(a) - Number(b);
+            document.getElementById("33").innerText = c;
+        }
+    </script>
+      <p>
+            <input type="text" id="111"> *
+             <input type="text" id="222">
+             <button onclick="chengfa()">=</button>
+             <input type="text" id="333">
+            </p>
+    <script>
+        function chengfa(){
+            var a = document.getElementById("111").value;
+            var b = document.getElementById("222").value;
+            var c =Number(a) * Number(b);
+            document.getElementById("333").innerText = c;
+        }
+    </script>
+
+        <p>
+        <input type="text" id="1111"> /
+         <input type="text" id="2222">
+         <button onclick="chufa()">=</button>
+         <input type="text" id="3333">
+        </p>
+        <script>
+        function chufa(){
+            var a = document.getElementById("1111").value;
+            var b = document.getElementById("2222").value;
+            var c =Number(a) /Number(b);
+            document.getElementById("3333").innerText = c;
+        }
+    </script>
+
+</body>
+</html>
+
